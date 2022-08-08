@@ -1,0 +1,191 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html, body{
+    height: 100%;
+    width: 100%;
+}
+body{
+    display: flex;                  
+    flex-direction: column;
+    background-color: #f6f2e9;
+    
+}
+header{
+    background-color: #ff6a28;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 15px 200px 15px 200px;
+    border: 2px solid black;
+    box-shadow: 0.3;
+    width: 100%;
+}
+.logodiv{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 30px;
+    font-weight:bolder;
+
+}
+.logo{
+    max-width: 7vh;
+}
+.marca{
+    max-width: 40vh;
+}
+.buttons{
+    display: flex;
+    gap: 5px;
+}
+button{
+    padding: 11px;
+    text-decoration: none;
+    border: none;
+    background-color: #ff6a28;
+    font-size: 2rem ;
+    cursor: pointer;
+    transition: 0.5s;
+    font-family: "tangerine";
+    border-radius: 20px;
+}
+button:hover{
+    background-color:  red;
+}
+
+.section1{
+    background-image: url(https://img.freepik.com/fotos-gratis/salada-de-tomate-pepino-cebola-roxa-e-folhas-de-alface-menu-de-vitamina-verao-saudavel-comida-vegetal-vegana-mesa-de-jantar-vegetariana-vista-do-topo-configuracao-plana_2829-6482.jpg?w=2000);
+    background-repeat: no-repeat;
+    background-size:cover;
+    min-height: 200px;
+    color: white;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    padding: 0px 200px 0px 200px;
+}
+.section1 h1{
+    font-size: 50px;
+    padding: 0px 200px 0px 200px;
+}
+.section2{
+    flex: 1 0 auto;
+    padding: 20px;   
+}
+.itens{
+    padding: 30px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    column-gap: 10px;
+    row-gap: 10px;
+    min-height: 70vh;
+}
+.itens img{
+    width: 340px;
+    height: 200px;
+    border-radius: 20px;
+}
+.itens a{
+    text-decoration: none;
+}
+.item{
+    width: 350px;
+    min-height: 200px;
+    background-color: #f6f2e9;
+    border: solid #f6f2e9 2px;
+    border-radius: 20px;
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration-line: none;
+    color: black;
+}
+.item:hover{
+    border: #ff6a28 solid 2px;
+    cursor: pointer;
+}
+.itemP2{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    font-size: 20px;
+    font-family: Arial, Helvetica, sans-serif;
+}
+.voltar{
+    text-align: center;
+    font-size: 30px;
+    
+}
+.voltar a{
+    color: #ff6a28;
+    text-decoration: none;
+}
+
+footer{
+    text-align: center;
+    background-color:  #ff6a28;     
+    font-size: 1.5rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;    
+    flex-shrink: 0;
+}
+.socialMedia{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: space-evenly;
+    width: 100%;   
+    flex-wrap: wrap;
+    padding: 10px;
+}
+.socialMedia a{
+    color: #f6f2e9;
+}
+
+@media(max-width: 955px) {
+    header{
+        padding: 20px;
+    }
+}
+@media(max-width:700px) {
+    .section1, .section1 h1{
+        padding: 0px;
+    }
+    .itemP2{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+    }
+}
+@media(max-width: 600px) {
+    .logodiv{
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 5px;
+        font-size: 20px;
+    }
+    header{
+        flex-direction: column;
+    }
+    .item img{
+        width: 280px;
+    }
+}
